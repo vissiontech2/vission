@@ -1,6 +1,6 @@
 # VissionTek
 
-this client side of this application is built with react's CRA 
+the client side of this application is built with react's CRA 
 
 the backend is build with expressJS's typescript flavor
 

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Abshir Jama",
+        "email": "abshirj05@gmail.com",
+        "password": "abshir26",
+        "company": "admin",
+        "title": "Engineer",
+        "entitlements": 777
+    },
+    {
+        "id": 2,
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "password": "password",
+        "company": "admin",
+        "title": "Engineer",
+        "entitlements": 777
+    }
+]

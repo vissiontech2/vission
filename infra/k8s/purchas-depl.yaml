@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: purchase-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: purchase
+  template:
+    metadata:
+      labels:
+        app: purchase
+    spec:
+      containers:
+        - name: purchase
+          image: vissiontek/purchase
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: purchase-srv
+spec:
+  selector:
+    app: purchase
+  ports:
+    - name: purchase
+      protocol: TCP
+      port: 3002
+      targetPort: 3002

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: dashboard-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: dashboard
+  template:
+    metadata:
+      labels:
+        app: dashboard
+    spec:
+      containers:
+        - name: dashboard
+          image: vissiontek/dashboard
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dashboard-srv
+spec:
+  selector:
+    app: dashboard
+  ports:
+    - name: dashboard
+      protocol: TCP
+      port: 3003
+      targetPort: 3003
