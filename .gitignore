@@ -1,0 +1,5 @@
+/react-client-app/node_modules
+/dashboard/node_modules
+/authentication/node_modules
+/purchase/node_modules
+/sales/node_modules
