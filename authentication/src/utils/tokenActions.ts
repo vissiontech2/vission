@@ -1,4 +1,4 @@
-import { secretKey } from '../utils/secretKey'
+import { secretKey } from './secretKey'
 import { UserInfo, Token, AuthBody } from '../commonTypes'
 import jwt from 'jsonwebtoken'
 

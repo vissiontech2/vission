@@ -1,9 +1,10 @@
 import express, { Request, Response } from 'express'
+import { routeNames } from '../utils/constants'
 
 
 const router = express.Router()
 
-router.get('/auth/signout', (req: Request, res: Response) => {
+router.post(routeNames.signoutRoute, (req: Request, res: Response) => {
     res.send('signout request')
 })
 

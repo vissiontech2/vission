@@ -1,14 +1,12 @@
 import express, { Request, Response } from 'express'
-import { getToken } from '../utils/token'
-import { findUser } from '../utils/commonActions'
-import { body, validationResult } from 'express-validator'
+import { getToken } from '../utils/tokenActions'
+import { findUser, routesInputValidation } from '../utils/commonActions'
+import { validationResult } from 'express-validator'
+import { routeNames, signInValidation } from '../utils/constants'
 
 const router = express.Router()
 
-router.post('/auth/signin', [
-    body('email').isEmail().withMessage('Email is not valid'),
-    body('password').trim().isLength({ min: 4, max: 10 }).withMessage('password must be at least 4 chars and max of 20')
-], (req: Request, res: Response) => {
+router.post(routeNames.signinRoute, routesInputValidation(signInValidation), (req: Request, res: Response) => {
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -17,7 +15,6 @@ router.post('/auth/signin', [
 
     try {
         const user = findUser(req.body)
-        console.log('login request for =>', user, 'has came in');
         const userToken = getToken(user)
         res.send({ userToken, user })
     } catch (error) {
