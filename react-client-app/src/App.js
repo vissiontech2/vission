@@ -29,10 +29,6 @@ const store = configureStore();
 function App() {
   const [direction] = useState('ltr');
 
-  // const handleDirecitonToggle = () => {
-  //   setDirection((prevDirection) => (prevDirection === 'ltr' ? 'rtl' : 'ltr'));
-  // };
-
   return (
     <StoreProvider store={store}>
       <ThemeProvider theme={direction === 'rtl' ? themeWithRtl : theme}>
