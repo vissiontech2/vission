@@ -28,7 +28,7 @@ app.use(json())
 app.use(cors())
 
 
-app.get('/auth', (req, res) => {
+app.get('/auth', (req: express.Request, res: express.Response) => {
     res.send('auth: i am alive')
 })
 
@@ -44,7 +44,7 @@ app.post('/auth/login', (req: express.Request, res: express.Response) => {
     }
 })
 
-app.post('/auth/verify', (req, res) => {
+app.post('/auth/verify', (req: express.Request, res: express.Response) => {
     try {
         validateToken(req.body)
         res.sendStatus(200)

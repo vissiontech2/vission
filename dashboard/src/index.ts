@@ -10,7 +10,7 @@ app.use(cors());
 app.use(json())
 
 
-app.get('/dashboard/', (req, res) => {
+app.get('/dashboard/', (req: express.Request, res: express.Response) => {
     res.send('dashboard: i am alive')
 })
 

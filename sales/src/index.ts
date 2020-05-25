@@ -11,7 +11,7 @@ app.use(json());
 app.use(cors());
 
 
-app.get('/sales/', (req, res) => {
+app.get('/sales/', (req: express.Request, res: express.Response) => {
     res.send('sales: i am alive')
 })
 
