@@ -8,6 +8,15 @@ export interface UserInfo {
     entitlements: number
 }
 
+export interface ValidationType {
+    name: string,
+    error: string,
+    length?: {
+        min: number,
+        max: number
+    }
+}
+
 export interface Token {
     token: string
 }

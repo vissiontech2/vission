@@ -6,7 +6,7 @@ the backend is build with expressJS's typescript flavor
 
 # technologies being used
 
-please familiarize your self with these technologies before you
+please familiarize your self with these technologies before you start
 
     1. React
     2. nodejs 
