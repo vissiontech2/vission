@@ -1,5 +1,8 @@
 /react-client-app/node_modules
-/dashboard/node_modules
-/authentication/node_modules
-/purchase/node_modules
-/sales/node_modules
+/services/dashboard/node_modules
+/services/authentication/node_modules
+/services/purchase/node_modules
+/services/sales/node_modules
+/services/issue-tracking/node_modules
+/services/access-management/node_modules
+
