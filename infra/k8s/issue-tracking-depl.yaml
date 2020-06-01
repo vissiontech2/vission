@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: issue-tracking-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: issue-tracking
+  template:
+    metadata:
+      labels:
+        app: issue-tracking
+    spec:
+      containers:
+        - name: issue-tracking
+          image: vissiontek/issue-tracking
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: issue-tracking-srv
+spec:
+  selector:
+    app: issue-tracking
+  ports:
+    - name: issue-tracking
+      protocol: TCP
+      port: 3004
+      targetPort: 3004

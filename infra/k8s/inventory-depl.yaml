@@ -1,31 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: purchase-depl
+  name: inventory-depl
 spec:
   replicas: 1
   selector:
     matchLabels: 
-      app: purchase
+      app: inventory
   template:
     metadata:
       labels:
-        app: purchase
+        app: inventory
     spec:
       containers:
-        - name: purchase
-          image: vissiontek/purchase
+        - name: inventory
+          image: vissiontek/inventory
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: purchase-srv
+  name: inventory-srv
 spec:
   selector:
-    app: purchase
+    app: inventory
   ports:
-    - name: purchase
+    - name: inventory
       protocol: TCP
       port: 3002
       targetPort: 3002

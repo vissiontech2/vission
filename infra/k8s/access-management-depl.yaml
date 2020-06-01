@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: access-management-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: access-management
+  template:
+    metadata:
+      labels:
+        app: access-management
+    spec:
+      containers:
+        - name: access-management
+          image: vissiontek/access-management
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: access-management-srv
+spec:
+  selector:
+    app: access-management
+  ports:
+    - name: access-management
+      protocol: TCP
+      port: 3005
+      targetPort: 3005
