@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: vissiontek/auth
+    - image: vissiontec/auth
       context: services/authentication
       docker:
         dockerfile: Dockerfile
@@ -16,7 +16,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: vissiontek/sales
+    - image: vissiontec/sales
       context: services/sales
       docker:
         dockerfile: Dockerfile
@@ -24,7 +24,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: vissiontek/inventory
+    - image: vissiontec/inventory
       context: services/inventory
       docker:
         dockerfile: Dockerfile
@@ -32,7 +32,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: vissiontek/dashboard
+    - image: vissiontec/dashboard
       context: services/dashboard
       docker:
         dockerfile: Dockerfile
@@ -40,7 +40,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: vissiontek/issue-tracking
+    - image: vissiontec/issue-tracking
       context: services/issue-tracking
       docker:
         dockerfile: Dockerfile
@@ -48,7 +48,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: vissiontek/access-management
+    - image: vissiontec/access-management
       context: services/access-management
       docker:
         dockerfile: Dockerfile

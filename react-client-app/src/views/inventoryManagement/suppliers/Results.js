@@ -118,7 +118,7 @@ function Results({ className, suppliers, ...rest }) {
                             <Link
                               color="inherit"
                               component={RouterLink}
-                              to={`/purchases/supplierDetails?id:${supplier.id}`}
+                              to={`/inventoryManagement/supplierDetails?id:${supplier.id}`}
                               variant="h6"
                             >
                               {supplier.name}
@@ -141,7 +141,7 @@ function Results({ className, suppliers, ...rest }) {
                           color="primary"
                           component={RouterLink}
                           size="small"
-                          to={`/purchases/orders?supplierId:${supplier.id}`}
+                          to={`/inventoryManagement/orders?supplierId:${supplier.id}`}
                           variant="outlined"
                         >
                           New Purchase

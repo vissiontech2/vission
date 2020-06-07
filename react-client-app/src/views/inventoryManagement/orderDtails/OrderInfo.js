@@ -59,7 +59,7 @@ function OrderInfo({ purchase, className, ...rest }) {
               <TableCell>
                 <Link
                   component={RouterLink}
-                  to={`/purchases/supplierDetails?id:${purchase.supplierId}`}
+                  to={`/inventoryManagement/supplierDetails?id:${purchase.supplierId}`}
                 >
                   {purchase.customerName}
                 </Link>

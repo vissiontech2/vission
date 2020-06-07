@@ -28,13 +28,13 @@ function Header({ className, handleNewOpen, ...rest }) {
             gutterBottom
             variant="overline"
           >
-            Sales
+            Inventory Management
           </Typography>
           <Typography
             component="h1"
             variant="h3"
           >
-            Inventory
+            Suppliers
           </Typography>
         </Grid>
         <Grid item>
@@ -43,7 +43,7 @@ function Header({ className, handleNewOpen, ...rest }) {
             variant="contained"
             onClick={handleNewOpen}
           >
-            Add item
+            Create Supplier
           </Button>
         </Grid>
       </Grid>

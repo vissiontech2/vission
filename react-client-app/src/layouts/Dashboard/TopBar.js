@@ -38,6 +38,8 @@ import ChatBar from './ChatBar';
 const useStyles = makeStyles((theme) => ({
   root: {
     boxShadow: 'none',
+    backgroundColor: '#ececec',
+    color: 'unset'
   },
   flexGrow: {
     flexGrow: 1
@@ -195,13 +197,7 @@ function TopBar({
       color="primary"
     >
       <Toolbar>
-        <RouterLink to="/">
-          <h1 style={{ color: 'white' }}>VissionTechnologies</h1>
-          {/* <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          /> */}
-        </RouterLink>
+
         <Hidden lgUp>
           <IconButton
             className={classes.menuButton}
