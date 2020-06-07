@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: vissiontek/auth
+          image: vissiontec/auth
 
 ---
 apiVersion: v1

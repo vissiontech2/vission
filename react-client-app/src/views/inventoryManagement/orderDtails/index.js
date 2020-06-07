@@ -32,7 +32,7 @@ function OrderManagementDetails() {
     const fetchOrder = () => {
       getPurchaseDetails({ params: { id: location.search.replace('?id:', '') } }).then((response) => {
         if (!Object.keys(response.data.purchase).length) {
-          history.replace('/purchases/orders');
+          history.replace('/inventoryManagement/orders');
         }
         if (mounted) {
           setPurchase(response.data.purchase);

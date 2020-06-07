@@ -22,7 +22,7 @@
                     </mask>
                     <g id="Rectangle">
                         <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
-                        <rect stroke="#3F51B5" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="1" y="1" width="44" height="44" rx="4"></rect>
+                        <rect stroke="#ececec" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="1" y="1" width="44" height="44" rx="4"></rect>
                     </g>
                     <g id="icons/ic/users(custom)" mask="url(#mask-2)">
                         <g transform="translate(9.000000, 9.000000)">
@@ -31,7 +31,7 @@
                             </mask>
                             <g id="icons/ic/users(custom)" stroke="none" fill="none" fill-rule="nonzero"></g>
                             <g id="ic/color/primary" stroke="none" fill="none" mask="url(#mask-5)" fill-rule="evenodd">
-                                <rect id="bg" fill="#3F51B5" x="0" y="0" width="28" height="28"></rect>
+                                <rect id="bg" fill="#ececec" x="0" y="0" width="28" height="28"></rect>
                             </g>
                         </g>
                     </g>

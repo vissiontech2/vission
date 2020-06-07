@@ -19,20 +19,22 @@ import {
 import MoreIcon from '@material-ui/icons/MoreVert';
 import NavItem from 'src/components/NavItem';
 import navConfig from './navConfig';
+import { Link as RouterLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    backgroundColor: '#ececec'
   },
   mobileDrawer: {
     width: 256,
   },
   desktopDrawer: {
     width: 256,
-    top: 64,
-    height: 'calc(100% - 64px)'
+    // top: 64,
+    // height: 'calc(100% - 64px)'
   },
   navigation: {
     overflow: 'auto',
@@ -175,12 +177,45 @@ function NavBar({
       className={clsx(classes.root, className)}
     >
       <nav className={classes.navigation}>
+        <RouterLink to="/dashboards/analytics">
+          <div style={{
+            backgroundColor: 'rgb(236, 236, 236)',
+            height: 33,
+            position: 'relative',
+            top: -190
+          }}>
+            <img
+              alt="Logo"
+              src="/images/logos/transparent-no-buffer.png"
+            />
+          </div>
+        </RouterLink>
         {navConfig.map((list) => renderNavItems({
           items: list.items,
           subheader: list.subheader,
           pathname: location.pathname,
           key: list.subheader
         }))}
+        <RouterLink to="/dashboards/analytics">
+          <div style={{ height: 230 }}>
+            <img
+              style={{
+                height: 307,
+                marginLeft: -30
+              }}
+              alt="Logo"
+              src="/images/logos/transparent-no-buffer.png"
+            />
+            <div style={{
+              width: 270,
+              height: 50,
+              marginLeft: -30,
+              position: 'relative',
+              top: -78,
+              backgroundColor: '#ececec'
+            }}></div>
+          </div>
+        </RouterLink>
       </nav>
       <Divider className={classes.divider} />
       <div className={classes.profile}>

@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
   root: {},
 }));
 
-function Header({ className, handleNewOrder, ...rest }) {
+function Header({ className, handleNewOpen, ...rest }) {
   const classes = useStyles();
 
   return (
@@ -28,22 +28,22 @@ function Header({ className, handleNewOrder, ...rest }) {
             gutterBottom
             variant="overline"
           >
-            Purchases
+            Inventory Management
           </Typography>
           <Typography
             component="h1"
             variant="h3"
           >
-            Orders
+            Inventory
           </Typography>
         </Grid>
         <Grid item>
           <Button
             color="primary"
             variant="contained"
-            onClick={handleNewOrder}
+            onClick={handleNewOpen}
           >
-            Create purchase order
+            Add item
           </Button>
         </Grid>
       </Grid>

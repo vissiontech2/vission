@@ -55,7 +55,7 @@ function SupplierManagementDetails() {
           setSupplier(response.data.supplier);
         } else {
           // eslint-disable-next-line no-restricted-globals
-          history.push('/purchases/suppliers');
+          history.push('/inventoryManagement/suppliers');
         }
       });
     };

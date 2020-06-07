@@ -1,4 +1,4 @@
-export const getProductsUrl = '/inventory/getProducts';
-export const addProductUrl = '/inventory/addProduct';
-export const deleteProductUrl = '/inventory/deleteProduct';
-export const updateProductUrl = '/inventory/updateProduct';
+export const getProductsUrl = '/inventoryManagement/getProducts';
+export const addProductUrl = '/inventoryManagement/addProduct';
+export const deleteProductUrl = '/inventoryManagement/deleteProduct';
+export const updateProductUrl = '/inventoryManagement/updateProduct';

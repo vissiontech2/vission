@@ -7,7 +7,8 @@ import { AppBar, Toolbar } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   root: {
-    boxShadow: 'none'
+    boxShadow: 'none',
+    backgroundColor: '#ececec',
   }
 }));
 
@@ -20,15 +21,7 @@ function Topbar({ className, ...rest }) {
       className={clsx(classes.root, className)}
       color="primary"
     >
-      <Toolbar>
-        <RouterLink to="/">
-          <h1 style={{ color: 'white' }}>VissionTek</h1>
-          {/* <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          /> */}
-        </RouterLink>
-      </Toolbar>
+      <Toolbar />
     </AppBar>
   );
 }

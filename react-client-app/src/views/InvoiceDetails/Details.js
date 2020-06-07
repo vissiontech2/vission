@@ -97,7 +97,7 @@ function Details({ invoice, className, ...rest }) {
           </Grid>
           <Grid item>
             <Typography align="right">
-              Email: info@vissionTek.com
+              Email: info@vissiontec.com
               {' '}
               <br />
               Tel: 2247640656

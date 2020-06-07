@@ -20,7 +20,7 @@
                             </mask>
                             <g id="Rectangle">
                                 <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
-                                <rect stroke="#3F51B5" stroke-width="2" stroke-linejoin="square" fill="#3F51B5" fill-rule="evenodd" x="1" y="1" width="44" height="44" rx="4"></rect>
+                                <rect stroke="#ececec" stroke-width="2" stroke-linejoin="square" fill="#ececec" fill-rule="evenodd" x="1" y="1" width="44" height="44" rx="4"></rect>
                             </g>
                             <g id="icons/ic/users(custom)" mask="url(#mask-2)">
                                 <g transform="translate(9.000000, 9.000000)">

@@ -81,29 +81,29 @@ export default [
         component: lazy(() => import('src/views/sales/customerDetails'))
       },
       {
-        path: '/sales/inventory',
+        path: '/inventoryManagement/inventory',
         exact: true,
-        component: lazy(() => import('src/views/sales/inventory'))
+        component: lazy(() => import('src/views/inventoryManagement/inventory'))
       },
       {
-        path: '/purchases/orders',
+        path: '/inventoryManagement/orders',
         exact: true,
-        component: lazy(() => import('src/views/purchases/orders'))
+        component: lazy(() => import('src/views/inventoryManagement/orders'))
       },
       {
-        path: '/purchases/orderDetails',
+        path: '/inventoryManagement/orderDetails',
         exact: true,
-        component: lazy(() => import('src/views/purchases/orderDtails'))
+        component: lazy(() => import('src/views/inventoryManagement/orderDtails'))
       },
       {
-        path: '/purchases/suppliers',
+        path: '/inventoryManagement/suppliers',
         exact: true,
-        component: lazy(() => import('src/views/purchases/suppliers'))
+        component: lazy(() => import('src/views/inventoryManagement/suppliers'))
       },
       {
-        path: '/purchases/supplierDetails',
+        path: '/inventoryManagement/supplierDetails',
         exact: true,
-        component: lazy(() => import('src/views/purchases/supplierDetails'))
+        component: lazy(() => import('src/views/inventoryManagement/supplierDetails'))
       },
       {
         path: '/invoices/1',

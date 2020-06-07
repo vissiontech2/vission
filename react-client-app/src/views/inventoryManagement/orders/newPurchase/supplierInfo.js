@@ -71,7 +71,7 @@ class CustomerInfo extends Component {
                             <TableCell>
                                 {this.props.chosenSupplier.name ? <Link
                                     component={RouterLink}
-                                    to={`/purchases/supplierDetails?id:${this.props.chosenSupplier.id}`}
+                                    to={`/inventoryManagement/supplierDetails?id:${this.props.chosenSupplier.id}`}
                                 >
                                     {this.props.chosenSupplier.name} </Link> : <TextField name="name" onChange={this.props.handleChange} />}
                             </TableCell>
