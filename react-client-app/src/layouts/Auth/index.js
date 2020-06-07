@@ -29,7 +29,7 @@ function Auth({ route }) {
 
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <div className={classes.container}>
         <div className={classes.content}>
           <Suspense fallback={<LinearProgress />}>
