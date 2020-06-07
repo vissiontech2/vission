@@ -106,6 +106,11 @@ export default [
         component: lazy(() => import('src/views/inventoryManagement/supplierDetails'))
       },
       {
+        exact: true,
+        path: '/accessManagement',
+        component: lazy(() => import('src/views/AccessManagement'))
+      },
+      {
         path: '/invoices/1',
         exact: true,
         component: lazy(() => import('src/views/InvoiceDetails'))

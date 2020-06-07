@@ -182,7 +182,7 @@ function NavBar({
             backgroundColor: 'rgb(236, 236, 236)',
             height: 33,
             position: 'relative',
-            top: -190
+            top: -185
           }}>
             <img
               alt="Logo"

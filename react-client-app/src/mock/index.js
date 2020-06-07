@@ -9,4 +9,5 @@ export * from './orderMock';
 // export * from './customerMock';
 export * from './dashboardMock';
 export * from './purchaseMock'
+export * from './accountMock';
 // export * from './products';
