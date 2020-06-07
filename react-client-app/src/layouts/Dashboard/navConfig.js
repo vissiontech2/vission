@@ -1,26 +1,11 @@
-/* eslint-disable react/no-multi-comp */
-/* eslint-disable react/display-name */
-// import React from 'react';
-// import { colors } from '@material-ui/core';
 import BarChartIcon from '@material-ui/icons/BarChart';
-// import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
-// import ChatIcon from '@material-ui/icons/ChatOutlined';
-// import CodeIcon from '@material-ui/icons/Code';
 import DashboardIcon from '@material-ui/icons/DashboardOutlined';
-// import ErrorIcon from '@material-ui/icons/ErrorOutline';
-// import FolderIcon from '@material-ui/icons/FolderOutlined';
-// import HomeIcon from '@material-ui/icons/HomeOutlined';
-// import ListAltIcon from '@material-ui/icons/ListAlt';
-// import LockOpenIcon from '@material-ui/icons/LockOpenOutlined';
-// import MailIcon from '@material-ui/icons/MailOutlined';
-// import PresentToAllIcon from '@material-ui/icons/PresentToAll';
-// import PeopleIcon from '@material-ui/icons/PeopleOutlined';
-// import PersonIcon from '@material-ui/icons/PersonOutlined';
 import ReceiptIcon from '@material-ui/icons/ReceiptOutlined';
-// import SettingsIcon from '@material-ui/icons/SettingsOutlined';
-// import ViewConfigIcon from '@material-ui/icons/ViewComfy';
-// import ListIcon from '@material-ui/icons/List';
-// import Label from 'src/components/Label';
+import StorageIcon from '@material-ui/icons/Storage';
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import BugReportIcon from '@material-ui/icons/BugReport';
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 
 export default [
   {
@@ -49,27 +34,47 @@ export default [
           {
             title: 'Customers',
             href: '/sales/customers'
+          }
+        ]
+      },
+      {
+        title: 'Inventory Management',
+        href: '/inventoryManagement',
+        icon: StorageIcon,
+        items: [
+          {
+            title: 'Orders',
+            href: '/inventoryManagement/orders'
+          },
+          {
+            title: 'Suppliers',
+            href: '/inventoryManagement/suppliers'
           },
           {
             title: 'Inventory',
-            href: '/sales/inventory'
+            href: '/inventoryManagement/inventory'
           },
         ]
       },
       {
-        title: 'Purchases',
-        href: '/purchases',
-        icon: BarChartIcon,
-        items: [
-          {
-            title: 'Orders',
-            href: '/purchases/orders'
-          },
-          {
-            title: 'Suppliers',
-            href: '/purchases/suppliers'
-          }
-        ]
+        title: 'Balance Sheet',
+        href: '/balanceSheet',
+        icon: AccountBalanceIcon
+      },
+      {
+        title: 'Issue Tracking',
+        href: '/issueTracking',
+        icon: BugReportIcon
+      },
+      {
+        title: 'Access Management',
+        href: '/accessManagement',
+        icon: LockOpenIcon
+      },
+      {
+        title: 'Notifications',
+        href: '/notifications',
+        icon: NotificationsNoneIcon
       },
       {
         title: 'Invoice',

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: inventory
-          image: vissiontek/inventory
+          image: vissiontec/inventory
 
 ---
 apiVersion: v1

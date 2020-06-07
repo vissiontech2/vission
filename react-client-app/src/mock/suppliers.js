@@ -3,7 +3,7 @@
 // import { colors } from '@material-ui/core';
 import mock from 'src/utils/mock';
 
-mock.onGet('/purchases/suppliers').reply(200, {
+mock.onGet('/inventoryManagement/suppliers').reply(200, {
     profile: {
         avatar: '/images/avatars/avatar_11.png',
         canHire: false,

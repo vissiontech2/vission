@@ -1,4 +1,4 @@
-# VissionTek
+# vissiontec
 
 the client side of this application is built with react's CRA 
 

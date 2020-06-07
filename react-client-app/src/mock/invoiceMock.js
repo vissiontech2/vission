@@ -14,7 +14,7 @@ mock.onGet('/api/invoices/1').reply(200, {
     ref: 'DEV-9483',
     customer: {
       name: 'Abshir Jama',
-      company: 'VissionTek Inc',
+      company: 'vissiontec Inc',
       nzbn: '6934656584231',
       address: 'Bosaso, somalia'
     },
